@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fareen Famous Marble Art</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+    /* Reset some default styles */
+    body,
+    h1,
+    h2,
+    p,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: scroll;
+
+
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 12px 51px;
+        width: 1698px;
+        height: 44px;
+        /* position: fixed; */
+
+    }
+
+    nav {
+        max-width: 960px;
+        margin: auto 138px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        background-color: red;
+        border: 2px solid black;
+        border-radius: 12px;
+        width: 326px;
+        height: 33px;
+        padding: 1px 17px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .homeimage {
+        display: block;
+        width: 1350px;
+        height: 648px;
+        margin: -229px -195px;
+        padding: 0px;
+        top: 0px;
+        opacity: 110%;
+        position: relative;
+        z-index: -1;
+
+
+    }
+
+    .heading {
+        margin: -710px -177px;
+        padding: 300px 183px;
+        opacity: 110%;
+    }
+
+    .hero {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    #home {
+        display: block;
+        width: 959px;
+        height: 497px;
+        position: relative;
+        z-index: -2;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        margin: 41px -98px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    .cta-button:hover {
+        background-color: #aa3232;
+        cursor: pointer;
+    }
+
+    section {
+        max-width: 960px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+        width: 620px;
+        margin: 9px 193px;
+
+    }
+
+    #marble {
+        display: block;
+        width: 967px;
+        height: 400px;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    #granite {
+        display: block;
+        width: 967px;
+        height: 400px;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    #gallery {
+        display: block;
+        width: 967px;
+        height: 400px;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .marbleimage {
+        display: flex;
+        width: 100px;
+        height: 243px;
+        padding: 15px 0px;
+        font-size: 28px;
+
+    }
+
+    ul {
+        margin: 10px 4px;
+        padding: 4px 3px;
+        list-style: none;
+        display: flex;
+    }
+
+    li {
+        margin: -13px 73px;
+        padding: 4px 3px;
+    }
+
+    .graniteimage {
+        display: flex;
+        width: 170px;
+        height: 176px;
+        padding: 32px 1px;
+        margin: 5px -12px;
+
+    }
+
+    .set {
+        margin: 6px;
+        width: 232px;
+        height: 232px;
+    }
+
+    .arrange2 {
+        margin: 20px -50px;
+        padding: 21px;
+    }
+
+
+    #gallery1 {
+        width: 452px;
+        height: 284px;
+        margin: 10px;
+    }
+
+    #gallery2 {
+        width: 460px;
+        height: 284px;
+        margin: 10px;
+    }
+
+    #gallery3 {
+        width: 452px;
+        height: 284px;
+        margin: 2px 4px;
+    }
+
+    #gallery4 {
+        width: 452px;
+        height: 284px;
+        margin: 3px 14px;
+    }
+
+    #gallery {
+        height: 663px;
+    }
+
+    .para {
+        font-weight: bold;
+        font-size: 20px;
+        opacity: 100%;
+        color: black;
+        margin: -9px -1px;
+
+    }
+
+    #about {
+        display: flex;
+        width: 957px;
+        height: 361px;
+
+    }
+
+    .aboutus {
+        width: 379px;
+        height: 272px;
+        margin: 41px -115px;
+        padding: 7px 117px;
+    }
+
+    #about h2 {
+        display: block;
+        width: 978px;
+        height: 30px;
+        justify-content: center;
+
+    }
+
+    #content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 81px 24px;
+        padding: -12px 0px;
+        align-items: center;
+        font-size: 19px;
+    }
+
+    #contact {
+        display: flex;
+        width: 957px;
+        height: 360px;
+    }
+
+    .contactdetail {
+        display: block;
+        width: 409px;
+        height: 343px;
+        margin: 31px -126px;
+        padding: 0px 0px;
+    }
+
+    form {
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin: 81px 177px;
+    }
+
+    input[type="text"] {
+        width: 350px;
+        height: 23px;
+
+    }
+
+    #btn {
+        display: block;
+        width: 77px;
+        height: 31px;
+        border: 2px solid black;
+        border-radius: 12px;
+
+    }
+
+    button:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        background-color: #cfc1c1;
+    }
+
+    li a:hover{
+        text-decoration: underline;
+        color: rgb(230, 142, 142);
+    }
+
+
+
+
+
+    /* Add more CSS for gallery and about sections as needed */
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fareen Famous Marble Art</div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#gallery"><i class="fa-solid fa-file"></i> Gallery</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> About Us</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <img class="homeimage" src="bgimgmain.jpg" alt="image loading">
+            <div class="heading">
+                <h1>Welcome to Fareen Famous Marble Art <br><br>
+                    Wide Range of <br> Excellent Quality Granite & Marble </h1>
+
+                <!-- <p class="para">Wide Range of <br> Excellent Quality Granite & Marble</p> -->
+                <a href="#gallery" class="cta-button">View Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="marble">
+        <h2>Marble</h2>
+        <div class="marbleimage">
+            <img src="marble1.webp" alt="image loading">
+
+            <img src="marble2.webp" alt="loading image">
+
+            <img src="marble3.webp" alt="loading image">
+
+            <img src="marble4.webp" alt="">
+
+        </div>
+        <div class="arrange">
+            <ul>
+                <li>White Marble</li>
+                <li>Italian Marble</li>
+                <li>Black Marble</li>
+                <li>Engineered Marble</li>
+            </ul>
+
+        </div>
+        <!-- Add your gallery images here -->
+    </section>
+
+    <section id="granite">
+        <h2>Granite</h2>
+        <div class="graniteimage">
+            <img class="set" src="granite001.jpg" alt="image loading">
+
+            <img class="set" src="granite002.jpg" alt="loading image">
+
+            <img class="set" src="granite003.jpg" alt="loading image">
+
+            <img class="set" src="homeimage2.jpg" alt="">
+
+        </div>
+        <div class="arrange2">
+            <ul>
+                <li>Granite Block</li>
+                <li>White Granite</li>
+                <li>Black Granite</li>
+                <li>Engineered Granite</li>
+            </ul>
+
+        </div>
+        <!-- Add your gallery images here -->
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="galleryimage">
+            <img class="galleryimage1" id="gallery1" src="bgimage3.png" alt="image loading">
+
+            <img class="galleryimage1" id="gallery2" src="bfimg01.jpg" alt="loading image">
+
+            <img class="galleryimage2" id="gallery3" src="bgimg.jpg" alt="loading image">
+
+            <img class="galleryimage2" id="gallery4" src="bgimage2.jpg" alt="loading image">
+
+        </div>
+
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <img class="aboutus" src="homeimage2.jpg" alt="">
+        <p id="content">We Fareen Famous Marble Art situated at By Pass, Makrana, Rajasthan, are a leading supplier of
+            first class
+            stone around the world. We stock a wide variet of natural stone slabs and granite marble. The wide range of
+            stone product include granite, marble, and many more. We always on the leading edgr of design, and strive to
+            satisfy the most discriminating tastes. We are dedicated to offering unparalleled quality and service to
+            desigers and architecture.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contactdetail">
+            <h4>Our Office Address</h4>
+            <p><i class="fa-solid fa-location-dot"></i> By Pass Road, Pulia Fhatak, Makrana, Rajasthan 341505</p>
+            <h4>Gereral Enquiries</h4>
+            <p><i class="fa-solid fa-envelope"></i> Fareenahmedusta.makrana@gmail.com</p>
+            <h4>Call Us</h4>
+            <p><i class="fa-solid fa-phone"></i> 9024883224</p>
+            <h4>Our Timing</h4>
+            <p><i class="fa-solid fa-clock"></i> Mon-Sun 09:00 AM - 06:00 PM </p>
+        </div>
+        <form action="">
+            <input type="text" name="" id="" placeholder="YOUR NAME"><br><br>
+            <input type="text" name="" id="" placeholder="YOUR EMAIL"><br><br>
+            <input type="text" name="" id="" placeholder="YOUR CONTACT NO."><br><br>
+            <textarea name="" id="" cols="46" rows="4" placeholder="YOUR MESSAGE"></textarea><br><br>
+            <button id="btn">Submit</button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fareen Famous Marble Art. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
